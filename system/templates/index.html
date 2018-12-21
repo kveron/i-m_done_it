@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+        Переводы песен
+{% endblock %}
+
+{% block body %}
+	<div id="title"><H1><em>Переводы песен известных групп</em></H1></div>
+
+    <form method="get">
+        <input type="text" name="search_name" placeholder="Search your music">
+        <input type="submit" name="search" value="Найти">
+    </form>
+
+    <div class="a1">
+		<H3><em><a href="https://www.youtube.com/watch?v=hTWKbfoikeg&list=PLZGh95p3Upww7fATMWNmwDX2F117rykvW" class="b1">Nirvana</a></em></H3>
+		<p><a href="#" class="fon1"></a></p>
+
+			<div class="blok">
+				<a href="1.1.html">Smells Like Teen Spirit</a><br>
+				<a href="1.2.html">Heart-Shaped Box</a><br>
+				<a href="1.3.html">The Man Who Sold the World</a><br>
+			</div>
+	</div>
+
+	<div class="a2">
+		<H3><em><a href="https://www.youtube.com/watch?v=Soa3gO7tL-c&list=PLo6aG-353CqkExUaI92laskuf50CqgGeK" class="b1">Green Day</a></em></H3>
+		<p><a href="#" class="fon2"></a></p>
+
+			<div class="blok">
+				<a href="2.1.html">American Idiot</a><br>
+				<a href="2.2.html">Boulevard of Broken Dreams</a><br>
+				<a href="2.3.html">Wake Me Up When September Ends</a><br>
+			</div>
+	</div>
+
+	<div class="a3">
+		<H3><em><a href="https://www.youtube.com/watch?v=kXYiU_JCYtU&start_radio=1&list=RDEMww6ZEHgLhQ-8eu_x7Z-FJw" class="b1">Linkin Park</a></em></H3>
+		<p><a href="#" class="fon3"></a></p>
+
+			<div class="blok">
+				<a href="3.1.html">Numb</a><br>
+				<a href="3.2.html">In The end</a><br>
+				<a href="3.3.html">What I've Done</a><br>
+			</div>
+	</div>
+
+	<div class="a4">
+		<H3><em><a href="https://www.youtube.com/watch?v=v2AC41dglnM&list=PLSKiP8AuSHih2m6mzB69N_tQXA6R1ExNC" class="b1">AC/DC</a></em></H3>
+		<p><a href="#" class="fon4"></a></p>
+
+			<div class="blok">
+				<a href="4.1.html">Back In Black</a><br>
+				<a href="4.2.html">Highway to Hell</a><br>
+				<a href="4.3.html">Thunderstruck</a><br>
+			</div>
+	</div>
+
+	<div class="a5">
+		<H3><em><a href="https://www.youtube.com/watch?v=d8ekz_CSBVg&list=PLqGNV0O8mvng2zmC-YwtiQCXWz2-zFkWh" class="b1">Three Days Grace</a></em></H3>
+		<p><a href="#" class="fon5"></a></p>
+
+			<div class="blok">
+				<a href="5.1.html">Painkiller</a><br>
+				<a href="5.2.html">I Am Machine</a><br>
+				<a href="5.3.html">Human Race</a><br>
+			</div>
+	</div>
+	<p>
+		<a href="{% url 'groups' %}">Бесполезные ссылки, которые жалко удалять</a>
+	</p>
+	<p>
+		<a href="{% url 'songs' %}">Новые песни</a>
+	</p>
+
+	<!-- <button class="sendToUs">Написать нам</button>
+
+	<div class="sendToUsBackground">
+		<hr>
+		Ваше имя:	<input type="text" name="">
+		<hr>
+		Ваша почта:	<input type="text" name="">
+		<hr>
+		<textarea rows="17" cols="38" name="text"></textarea>
+		<button>Отправить</button>
+	</div> -->
+
+	<div class = "toTop" ><img src="{% static 'fonts/1f519-strelka-vverx.png' %}" width="100" height="100"></div>
+{% endblock %}

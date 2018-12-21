@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+        Переводы песен
+{% endblock %}
+
+{% block body %}
+<style>
+    .group{
+    padding: 20px;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    }
+    .group h4{
+    color: #0c9fff;
+    }
+    .content{
+    font-size: 12px;
+    color: grey;
+    }
+</style>
+    <div class="container">
+    <h1>{{ title }} </h1>
+    <ol>
+        {% for student in students %}
+        <li>
+            {{ student.name }}, {{student.group.name }}, {{ student.age }}
+        </li>
+        {% endfor %}
+    </ol>
+        {% for student in students %}
+        <div class="group">
+            <a href="{% url 'Students' student.id %}"><h4>{{ student.name }}</h4>
+                <div class="content">{{student.group.name }}, {{ student.age }}</div>
+            </a>
+        </div>
+        {% endfor %}
+        <a href="{% url 'home' %}">Главная</a>
+
+</div>
+{% endblock %}

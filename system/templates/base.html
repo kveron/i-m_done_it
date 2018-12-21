@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+
+    <script src="{% static 'js/jq.js' %}" type="application/javascript"></script>
+    <script src="{% static 'js/script.js' %}" type="application/javascript"></script>
+
+    <link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css">
+    <link rel="shortcur icon" href="{% static 'fonts/Headphone-icon.png' %}">
+
+</head>
+<body>
+
+    {% block body %}
+
+    {% endblock %}
+
+</body>
+</html>

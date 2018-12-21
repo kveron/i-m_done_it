@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+        Переводы песен
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+    <h1>Группы</h1>
+        <a href="{% url 'new_group' %}"> Создать группу</a>
+    <ol>
+        {% for group in groups %}
+        <li>
+            <a href="{% url 'group' group.id %}">{{ group.name }}</a>
+        </li>
+        {% endfor %}
+    </ol>
+        <a href="{% url 'authors' %}">Авторы</a><br>
+        <a href="{% url 'Student' %}">Студенты</a><br>
+        <a href="{% url 'home' %}">Главная</a>
+</div>
+{% endblock %}

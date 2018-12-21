@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+        Переводы песен
+{% endblock %}
+
+{% block body %}
+<style>
+    .song{
+    padding: 20px;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    }
+    .song h4{
+    color: #0c9fff;
+    }
+    .content{
+    font-size: 12px;
+    color: grey;
+    }
+</style>
+        <div class="song">
+            <h4>{{ song.name }}</h4>
+            <div class="content">{{song.text|safe }}, {{ song.translation|safe }}</div>
+        </div>
+        <a href="{% url 'home' %}">Главная</a>
+{% endblock %}

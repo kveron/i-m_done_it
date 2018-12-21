@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+        Переводы песен
+{% endblock %}
+
+{% block body %}
+<h1>Добавить группу</h1>
+        {% if message %}
+        <h2 style="color: orange;">{{ message }}</h2>
+        {% endif %}
+<form method="post">
+        {% csrf_token %}
+        <input type="text" name="group_name" placeholder="Название"><br>
+        <input type="submit" value="добавить">
+</form>
+<a href="{% url 'home' %}">Главная</a>
+{% endblock %}

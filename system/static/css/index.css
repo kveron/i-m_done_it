@@ -1,0 +1,261 @@
+{% load static staticfiles %}
+BODY{
+	background-image: url("Guitar_Wall_524244_2355x1428.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#title{
+	text-align: center;
+	font-family: Times new roman, serif;
+	color: red;
+}
+
+.fon1{
+	background: url("1390595763_264eb8af0c.jpg.pagespeed.ce.a3ALBtwpTF — копия.jpg");
+	display: block;
+	width: 325px;
+	height: 325px;
+}
+
+.fon1:hover {
+    background: url("7ab716354432ee12f19b58c60471093b_L.jpg");
+}
+
+.fon2{
+	background:  url("green-day — копия.jpg");
+	display: block;
+	width: 325px;
+	height: 325px;
+}
+
+.fon2:hover {
+    background: url("200385_main.jpg");
+}
+
+.fon3{
+	background: url("800px-Linkin-park-logo — копия.jpg");
+	display: block;
+	width: 325px;
+	height: 325px;
+}
+
+.fon3:hover {
+    background: url("gandex.ru-22535_8e00701bfc96df464f072d91a4954137.jpg");
+}
+
+.fon4{
+	background: url("71O66adA12L._SX355_ — копия.jpg");
+	display: block;
+	width: 325px;
+	height: 325px;
+}
+
+.fon4:hover {
+    background: url("268x0w.jpg");
+}
+
+.fon5{
+	background: url("three-days-grace-logo — копия.jpg");
+	display: block;
+	width: 325px;
+	height: 325px;
+}
+
+.fon5:hover {
+    background: url("166350366_w640_h640_three_days_grace_06.jpg");
+}
+
+H3{
+	text-align: center;
+	font-family: Times new roman, serif;
+}
+
+img{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.b1{
+	color: red;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.blok{
+	padding: 10px;
+	font: italic;
+	position:relative;
+	top: 15px;
+	left:50px;
+	height: 80px;
+    width: 220px;
+    overflow: auto;
+    background-color: rgba(255,255,255,0.3);
+    border: 3px double #000000;
+}
+
+.a1{
+	position: absolute;
+	left:225px;
+}
+
+.a2{
+	position: absolute;
+	left: 600px;
+}
+
+.a3{
+	position: absolute;
+	left: 975px;
+}
+
+.a4{
+	position: absolute;
+	left: 400px;
+	top: 625px;
+}
+
+.a5{
+	position: absolute;
+	left: 800px;
+	top: 625px;
+}
+.toTop{
+	position:fixed;
+	bottom:10px;
+	cursor:pointer;
+	display:none;
+}
+
+
+
+
+
+
+
+
+.t{
+	text-indent: 15px;
+	font-family: Times new roman, serif;
+	border: 1px double #000000;
+	background: rgba(235,235,235,0.5);
+}
+
+H5{
+	text-align: center;
+}
+
+H4{
+	text-align: center;
+	font-family: Times new roman, serif;
+}
+
+.name{
+	color: #000000;
+}
+
+.p{
+	background: rgba(235,235,235,0.5);
+	position: absolute;
+	left: 350px;
+	right: 775px;
+	font: message-box;
+}
+
+.per
+{
+	background: rgba(235,235,235,0.5);
+	position: absolute;
+	left: 825px;
+	right: 350px;
+	font: message-box;
+}
+.p11{
+	background: rgba(235,235,235,0.5);
+	position: absolute;
+	left: 425px;
+	right: 775px;
+	font: message-box;
+}
+
+.per11
+{
+	background: rgba(235,235,235,0.5);
+	position: absolute;
+	left: 825px;
+	right: 425px;
+	font: message-box;
+}
+.p12{
+	background: rgba(235,235,235,0.5);
+	position: absolute;
+	left: 250px;
+	right: 815px;
+	font: message-box;
+}
+
+.per12
+{
+	background: rgba(235,235,235,0.5);
+	position: absolute;
+	left: 800px;
+	right: 265px;
+	font: message-box;
+}
+.p13{
+	background: rgba(235,235,235,0.5);
+	position: absolute;
+	left: 500px;
+	right: 775px;
+	font: message-box;
+}
+
+.per13
+{
+	background: rgba(235,235,235,0.5);
+	position: absolute;
+	left: 825px;
+	right: 400px;
+	font: message-box;
+}
+
+.back{
+	position: fixed;
+	top: 650px;
+}
+
+/*.sendToUs {
+	width:100px;
+	border:1px solid #ccc;
+	background:#f7f7f7;
+	text-align:center;
+	padding:5px;
+	position:fixed;
+	bottom:10px;
+	right:10px;
+	cursor:pointer;
+	display:none;
+	color:#333;
+	font-family:verdana;
+	font-size:11px;
+}
+.sendToUsBackground{
+	position: fixed;
+	bottom:50px;
+	right:10px;
+	width: 300px;
+	height: 400px;
+	background:#f7f7f7;
+}
+.button{
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	width:100px;
+	border:1px solid #ccc;
+	text-align:center;
+	cursor:pointer;
+}*/

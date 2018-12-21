@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+        Переводы песен
+{% endblock %}
+
+{% block body %}
+<style>
+    .authors{
+    padding: 20px;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    }
+    .authors h4{
+    color: #0c9fff;
+    }
+    .content{
+    font-size: 12px;
+    color: grey;
+    }
+</style>
+{% for author in authors %}
+        <div class="authors">
+            <h4>{{ author.name }}</h4>
+            <div class="content">{{author.birthday|safe }}, {{ author.bio|safe }}</div>
+        </div>
+{%endfor%}
+        <a href="{% url 'home' %}">Главная</a>
+{% endblock %}
